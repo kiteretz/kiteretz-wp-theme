@@ -1,0 +1,1 @@
+# KITERETZ WordPress Theme
