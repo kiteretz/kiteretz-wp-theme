@@ -70,7 +70,7 @@ add_action( 'widgets_init', 'ktrz_widgets_init' );
  */
 function ktrz_scripts() {
 
-	wp_enqueue_style( 'ktrz-style', get_template_directory_uri() . '/assets/css/main.css', array(), '20171226003022' );
+	wp_enqueue_style( 'ktrz-style', get_template_directory_uri() . '/assets/css/main.css', array(), '20171226004449' );
 
 	wp_enqueue_script( 'ktrz-script', get_template_directory_uri() . '/assets/js/main.js', array(), '', true );
 
