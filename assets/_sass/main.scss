@@ -100,8 +100,18 @@ body {
 .entry-meta {
 	color: #ccc;
 	font-size: 14px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	text-align: center;
+}
+
+.entry-share {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	> * {
+		margin: 0.5em;
+	}
 }
 
 .entry-content {
