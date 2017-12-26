@@ -14,7 +14,7 @@
 			<div class="entry-meta"><?php echo get_the_time( 'Y.m.d' ); ?></div>
 			<div class="entry-share">
 				<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>">Tweet</a>
+				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="<?php the_title() ?>" data-url="<?php the_permalink(); ?>" data-hashtags="kiteretz" data-show-count="false">Tweet</a>
 				<a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en" data-save-url="<?php the_permalink(); ?>"></a>
 			</div>
 			<div class="entry-content">
