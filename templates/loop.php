@@ -5,6 +5,11 @@
 	<?php while( have_posts() ): the_post(); ?>
 
 		<article class="entry">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<figure class="post-thumbnail">
+					<?php the_post_thumbnail( array( 940, 470 ) ); ?>
+				</figure>
+			<?php endif; ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<div class="entry-meta"><?php echo get_the_time( 'Y.m.d' ); ?></div>
 			<div class="entry-share">
