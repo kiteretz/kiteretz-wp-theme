@@ -7,7 +7,7 @@
 		<article class="entry">
 			<?php if ( has_post_thumbnail() ) : ?>
 				<figure class="post-thumbnail">
-					<?php the_post_thumbnail( array( 940, 470 ) ); ?>
+					<?php the_post_thumbnail( array( 1880, 940 ) ); ?>
 				</figure>
 			<?php endif; ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
