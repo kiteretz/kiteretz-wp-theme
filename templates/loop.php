@@ -21,7 +21,7 @@
 			<div class="entry-share">
 
 				<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" class="facebook icon-facebook-square" target="_blank">Share</a>
-				<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" class="twitter icon-twitter" target="_blank">Tweet</a>
+				<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&hashtags=kiteretz" class="twitter icon-twitter" target="_blank">Tweet</a>
 				<a href="http://getpocket.com/edit?url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" class="pocket icon-pocket" target="_blank">Pocket</a>
 
 			</div>
