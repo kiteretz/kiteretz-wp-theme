@@ -1,23 +1,45 @@
 @font-face {
 	font-family: 'Proxima Nova';
-	font-weight: 400;
-	src: url('../fonts/ProximaNova-Regular.eot');
-	src: url('../fonts/ProximaNova-Regular.eot?#iefix')      format('embedded-opentype'),
-	     url('../fonts/ProximaNova-Regular.woff')            format('woff'),
-	     url('../fonts/ProximaNova-Regular.otf')             format('opentype'),
-	     url('../fonts/ProximaNova-Regular.ttf')             format('truetype'),
-	     url('../fonts/ProximaNova-Regular.svg#svgFontName') format('svg');
-}
-
-@font-face {
-	font-family: 'Proxima Nova';
 	font-weight: 200;
 	src: url('../fonts/ProximaNova-Light.eot');
 	src: url('../fonts/ProximaNova-Light.eot?#iefix')      format('embedded-opentype'),
 	     url('../fonts/ProximaNova-Light.woff')            format('woff'),
 	     url('../fonts/ProximaNova-Light.otf')             format('opentype'),
 	     url('../fonts/ProximaNova-Light.ttf')             format('truetype'),
-	     url('../fonts/ProximaNova-Light.svg#svgFontName') format('svg');
+	     url('../fonts/ProximaNova-Light.svg#ProximaNova') format('svg');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: 400;
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix')      format('embedded-opentype'),
+	     url('../fonts/ProximaNova-Regular.woff')            format('woff'),
+	     url('../fonts/ProximaNova-Regular.otf')             format('opentype'),
+	     url('../fonts/ProximaNova-Regular.ttf')             format('truetype'),
+	     url('../fonts/ProximaNova-Regular.svg#ProximaNova') format('svg');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: 600;
+	src: url('../fonts/ProximaNova-Semibold.eot');
+	src: url('../fonts/ProximaNova-Semibold.eot?#iefix')      format('embedded-opentype'),
+	     url('../fonts/ProximaNova-Semibold.woff')            format('woff'),
+	     url('../fonts/ProximaNova-Semibold.otf')             format('opentype'),
+	     url('../fonts/ProximaNova-Semibold.ttf')             format('truetype'),
+	     url('../fonts/ProximaNova-Semibold.svg#ProximaNova') format('svg');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix')      format('embedded-opentype'),
+	     url('../fonts/ProximaNova-Bold.woff')            format('woff'),
+	     url('../fonts/ProximaNova-Bold.otf')             format('opentype'),
+	     url('../fonts/ProximaNova-Bold.ttf')             format('truetype'),
+	     url('../fonts/ProximaNova-Bold.svg#ProximaNova') format('svg');
 }
 
 @font-face {
@@ -28,5 +50,53 @@
 	     url('../fonts/ProximaNovaCond-Light.woff')            format('woff'),
 	     url('../fonts/ProximaNovaCond-Light.otf')             format('opentype'),
 	     url('../fonts/ProximaNovaCond-Light.ttf')             format('truetype'),
-	     url('../fonts/ProximaNovaCond-Light.svg#svgFontName') format('svg');
+	     url('../fonts/ProximaNovaCond-Light.svg#ProximaNova') format('svg');
+}
+
+@font-face {
+	font-family: 'kiteretzicon';
+	src: url('../fonts/kiteretzicon.eot?hl4ed1');
+	src: url('../fonts/kiteretzicon.eot?hl4ed1#iefix') format('embedded-opentype'),
+	     url('../fonts/kiteretzicon.ttf?hl4ed1') format('truetype'),
+	     url('../fonts/kiteretzicon.woff?hl4ed1') format('woff'),
+	     url('../fonts/kiteretzicon.svg?hl4ed1#kiteretzicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'kiteretzicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter-square:before {
+	content: "\f081";
+}
+.icon-facebook-square:before {
+	content: "\f082";
+}
+.icon-github-square:before {
+	content: "\f092";
+}
+.icon-twitter:before {
+	content: "\e900";
+}
+.icon-facebook:before {
+	content: "\e901";
+}
+.icon-github:before {
+	content: "\f09b";
+}
+.icon-pocket:before {
+	content: "\e902";
 }
