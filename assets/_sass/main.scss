@@ -100,6 +100,26 @@ img {
 	margin: 50px auto;
 }
 
+.posts {
+
+	.entry {
+
+		+ .entry {
+			margin-top: 100px;
+			padding-top: 100px;
+
+			&::before {
+				content: "";
+				display: block;
+				height: 0;
+				border-top: 1px solid #333;
+				width: 20px;
+				margin: auto;
+			}
+		}
+	}
+}
+
 .post-thumbnail {
 	margin: 0 auto 20px;
 	text-align: center;
