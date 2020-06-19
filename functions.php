@@ -79,3 +79,40 @@ function ktrz_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ktrz_scripts' );
+
+/**
+ * Plugin Name: Add Meta to REST-API
+ * Author: Takayuki Miyauchi
+ * Description: Example plugin that adds post meta to rest-api.
+ */
+add_action( 'rest_api_init',  function() {
+	register_rest_field(
+		'post',        // post type
+		'post_meta',   // rest-apiに追加するキー
+		array(
+			'get_callback'  => function( $object, $field_name, $request ) {
+				// 出力したいカスタムフィールドのキーをここで定義
+				$meta_fields = array(
+					'heading',
+					'ogimage',
+				);
+				$meta = array();
+				foreach ( $meta_fields as $field ) {
+					// バリデーションを一切してないので注意
+					$meta[ $field ] = get_post_meta( $object[ 'id' ], $field, true );
+				}
+				return $meta;
+			},
+			'update_callback' => null,
+			'schema'          => null,
+		)
+	);
+} );
+
+/**
+ * Add loading="lazy" decoding="async" attributes to img
+ */
+add_filter( 'the_content', function( $content ) {
+	$content = str_replace( '<img ', '<img loading="lazy" decoding="async" ', $content );
+	return $content;
+} );
